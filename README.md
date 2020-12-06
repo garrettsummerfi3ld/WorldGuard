@@ -1,5 +1,8 @@
 # ![WorldGuard](http://static.sk89q.com/readme/worldguard-new.png)
 
+![Compile Status](https://github.com/garrettsummerfi3ld/WorldGuard/workflows/gradle/badge.svg)
+
+
 WorldGuard lets you and players guard areas of land against griefers and undesirables, as well as tweak and disable various gameplay features of Minecraft.
 
 * Block creeper and wither block damage, falling damage, etc.;
@@ -25,7 +28,15 @@ The project is written for Java 6 and our build process makes use of
 [Gradle](http://gradle.org). Detailed compilation information
 [can be found on the wiki](http://wiki.sk89q.com/wiki/WorldGuard/Development#Compiling).
 
-Dependencies are automatically handled by Gradle.
+
+**Check if your JAVA_HOME environment variables are using JDK, as well as Java8**
+
+```shell
+./gradlew shadow
+```
+
+The compiled jar is located in `[project]/build/libs`
+
 
 Contributing
 ------------

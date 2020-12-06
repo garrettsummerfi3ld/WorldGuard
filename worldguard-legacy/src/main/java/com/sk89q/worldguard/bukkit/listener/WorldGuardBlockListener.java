@@ -370,7 +370,6 @@ public class WorldGuardBlockListener implements Listener {
     /*
      * Called when block physics occurs.
      */
-    @EventHandler(ignoreCancelled = true)
     public void onBlockPhysics(BlockPhysicsEvent event) {
         ConfigurationManager cfg = plugin.getGlobalStateManager();
         WorldConfiguration wcfg = cfg.get(event.getBlock().getWorld());
